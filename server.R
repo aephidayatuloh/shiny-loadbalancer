@@ -4,7 +4,7 @@
 
 makeRedirect <- function(appnames, baseurl) {
   # CPU <- read.table("/var/shiny-server/Data/CPU.txt") # 
-  CPU <- read.table("Data/CPU.txt") # 
+  CPU <- read.table("CPU.txt") # 
   App <- data.frame(app = appnames)
   App <- merge(App, CPU, all.x = TRUE)
   App$usr[which(is.na(App$usr))] <- 0
