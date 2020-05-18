@@ -3,8 +3,9 @@
 # by Huidong Tian
 # some changes by Sebastian Jeworutzki (github.com/sjewo)
 
-PATH <- "var/shiny-server/www"
-setwd("/var/shiny-server/Data")
+PATH <- "www"
+dir.create("Data")
+setwd("Data")
 
 while (TRUE) {
     dat <- tryCatch(readLines(pipe("top -n 1 -b -u shiny","r")),
