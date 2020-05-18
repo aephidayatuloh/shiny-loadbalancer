@@ -4,8 +4,8 @@
 # some changes by Sebastian Jeworutzki (github.com/sjewo)
 
 PATH <- "www"
-dir.create("Data")
-setwd("Data")
+# dir.create("Data")
+# setwd("Data")
 
 while (TRUE) {
     dat <- tryCatch(readLines(pipe("top -n 1 -b -u shiny","r")),
